@@ -1,0 +1,18 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: "italy"
+  namespace: "italy"
+spec:
+  releaseName: "italy"
+  forceUpgrade: true
+  rollback:
+    enable: true
+    force: true
+    disableHooks: true
+  chart:
+    git: git@github.com:michaelperel/helm-rollback
+    path: charts/helloworld
+    ref: master
+  values:
+    COUNTRY: "italy"

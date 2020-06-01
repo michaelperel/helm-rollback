@@ -18,7 +18,7 @@ spec:
         env:
         - name: COUNTRY
           value: "{{ .Values.COUNTRY }}"
-        - name: ANOTHERVALUE
-          value: "ANOTHER VALUE"
+        - name: MYVALUE
+          value: "{{ .Values.MYVALUE }}"
         ports:
         - containerPort: {{ .Values.port }}

@@ -1,4 +1,5 @@
 image: mperel/helloworld
 tag: latest
 port: 8080
+MYVALUE: "MYVALUE"
 COUNTRY: "change me"

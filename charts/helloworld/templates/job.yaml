@@ -11,5 +11,5 @@ spec:
   - name: myapp-container
     image: 'debian'
     command: ["/bin/sh"]
-    args: ["-c", "exit 1"]
+    args: ["-c", "exit 0"]
   restartPolicy: Never

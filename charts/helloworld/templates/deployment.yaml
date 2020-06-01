@@ -16,7 +16,6 @@ spec:
       - name: init-myservice
         image: busybox:1.28
         command: ['sh', '-c', "exit 0"]
-      restartPolicy: Never
       containers:
       - name: helloworld
         image: "{{ .Values.image }}:{{ .Values.tag }}"

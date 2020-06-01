@@ -12,6 +12,10 @@ spec:
       labels:
         app: helloworld
     spec:
+      initContainers:
+      - name: init-myservice
+        image: busybox:1.28
+        command: ['sh', '-c', "exit 0"]
       containers:
       - name: helloworld
         image: "{{ .Values.image }}:{{ .Values.tag }}"

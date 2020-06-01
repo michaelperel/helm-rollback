@@ -12,3 +12,4 @@ spec:
     image: 'debian'
     command: ["/bin/sh"]
     args: ["-c", "echo hello"]
+  restartPolicy: Never

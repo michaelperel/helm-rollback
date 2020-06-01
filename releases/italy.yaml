@@ -16,4 +16,4 @@ spec:
     path: charts/helloworld
     ref: master
   values:
-    COUNTRY: "broken"
+    COUNTRY: "job"

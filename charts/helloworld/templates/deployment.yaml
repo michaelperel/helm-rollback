@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: helloworld
-  replicas: 1
+  replicas: 4
   template:
     metadata:
       labels:
@@ -15,7 +15,7 @@ spec:
       initContainers:
       - name: init-myservice
         image: busybox:1.28
-        command: ['sh', '-c', "exit 0"]
+        command: ['sh', '-c', "exit 1"]
       containers:
       - name: helloworld
         image: "{{ .Values.image }}:{{ .Values.tag }}"

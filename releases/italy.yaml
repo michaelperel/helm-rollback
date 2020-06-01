@@ -16,4 +16,4 @@ spec:
     path: charts/helloworld
     ref: master
   values:
-    COUNTRY: "yes italy 1"
+    COUNTRY: "a new value"

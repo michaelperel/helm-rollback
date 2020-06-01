@@ -16,4 +16,4 @@ spec:
     path: charts/helloworld
     ref: master
   values:
-    COUNTRY: "a new value"
+    COUNTRY: "job"

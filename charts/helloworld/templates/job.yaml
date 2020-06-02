@@ -5,11 +5,11 @@ metadata:
   labels:
     app: myapp
   annotations:
-    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook": pre-install,pre-upgrade
 spec:
   containers:
   - name: myapp-container
     image: 'debian'
     command: ["/bin/sh"]
-    args: ["-c", "exit 1"]
+    args: ["-c", "env"]
   restartPolicy: Never

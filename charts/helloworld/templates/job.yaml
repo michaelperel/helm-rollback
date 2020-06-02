@@ -16,5 +16,5 @@ spec:
     - name: MYVALUE
       value: "{{ .Values.MYVALUE }}"
     command: ["/bin/sh"]
-    args: ["-c", "env"]
+    args: ["-c", "env; exit 1"]
   restartPolicy: Never

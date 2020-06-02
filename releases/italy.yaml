@@ -9,7 +9,6 @@ spec:
   rollback:
     enable: true
     force: true
-    disableHooks: true
     recreate: true
   chart:
     git: git@github.com:michaelperel/helm-rollback

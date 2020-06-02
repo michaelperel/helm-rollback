@@ -10,6 +10,11 @@ spec:
   containers:
   - name: myapp-container
     image: 'debian'
+    env:
+    - name: COUNTRY
+      value: "{{ .Values.COUNTRY }}"
+    - name: MYVALUE
+      value: "{{ .Values.MYVALUE }}"
     command: ["/bin/sh"]
     args: ["-c", "env"]
   restartPolicy: Never
